@@ -1,10 +1,39 @@
 package code.datas;
 
 import code.interfaces.HouseKeeper;
+import code.interfaces.Owner;
 import code.interfaces.Pet;
 
 // Dog 클래스가 HouseKeeper, Pet 인터페이스 역할을 부여받음.
 public class Dog extends Animal implements HouseKeeper, Pet{
+	
+//	Owner라는 interface를 객체로 생성/멤버 변수이므로 private
+	private Owner myOwner = null;
+
+	public void crash() {
+		
+		if (myOwner != null) {
+			myOwner.fixSituation();
+		}
+		else {
+			System.out.println("주인이 없어서 수습 불가!");
+		}
+		
+	}
+		
+	
+	
+	public Owner getMyOwner() {
+		return myOwner;
+	}
+
+
+// Owner라는 interface를 파라미터로 요구함
+	public void setMyOwner(Owner myOwner) {
+		this.myOwner = myOwner;
+	}
+
+
 
 	@Override
 	public void playWithOwner() {
