@@ -22,7 +22,7 @@ public class Human extends Animal implements TaxPayer, Army {
 	}
 
 	@Override
-	public void defanse() {
+	public void defenseCountry() {
 		// TODO Auto-generated method stub
 
 		System.out.println("입대해서 2년간 나라를 지킵니다.");

@@ -4,6 +4,6 @@ public interface Army {
 	
 	public abstract void fireGun();
 
-	public abstract void defanse();
+	public abstract void defenseCountry();
 
 }
