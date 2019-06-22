@@ -2,8 +2,9 @@ package code.datas;
 
 import code.interfaces.TaxPayer;
 import code.interfaces.Army;
+import code.interfaces.Owner;
 
-public class Human extends Animal implements TaxPayer, Army{
+public class Human extends Animal implements TaxPayer, Army, Owner{
 
     @Override
     public void payTax(int money) {
@@ -23,6 +24,12 @@ public class Human extends Animal implements TaxPayer, Army{
     public void defenseCountry() {
         // TODO Auto-generated method stub
         System.out.println("나라를 지킵니다.");
+    }
+
+    @Override
+    public void fixSituation() {
+        // TODO Auto-generated method stub
+        System.out.println("사람이 개가 친 사고를 수습합니다.");
     }
     
     
