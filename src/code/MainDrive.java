@@ -4,7 +4,7 @@ import code.datas.Human;
 
 public class MainDrive {
 
-//	조경진의 브런치 입니다.
+// sumin2
 	
 	public static void main(String[] args) {
 		
@@ -18,6 +18,15 @@ public class MainDrive {
 		
 		h1.payTax(500);
 		
+		Dog d1=new dog();
+		
+		d1.move(200,100);
+		
+		d1.kickOutThiek();
+		
+		d1.patrol();
+		
+		d1.paltWithOw();
 	}
 	
 }
