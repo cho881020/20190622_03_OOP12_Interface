@@ -1,5 +1,6 @@
 package code;
 
+import code.datas.Dog;
 import code.datas.Human;
 
 public class MainDrive {
@@ -14,6 +15,11 @@ public class MainDrive {
 		h1.defenseCountry();
 		h1.fireGun();
 		h1.payTax(50000);
+		
+		Dog dog1 = new Dog();
+		dog1.kickOutThief();
+		dog1.patrol();
+		dog1.playWithOwner();
 		
 	}
 	
