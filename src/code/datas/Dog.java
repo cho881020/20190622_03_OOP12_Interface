@@ -1,14 +1,37 @@
 package code.datas;
 
 import code.interfaces.HouseKeeper;
+import code.interfaces.Owner;
 import code.interfaces.Pet;
 
 public class Dog extends Animal implements HouseKeeper,Pet{
 
+	private Owner myOwner =null;
 	
-	public void name() {
+	public void crash() { 
+
+		if (myOwner !=null) {
+			myOwner.fixSituation();
+		}
+		else {
+			System.out.println("주인이없어서 수습이안됨");
+		}
 		
 	}
+	
+	
+	
+	public Owner getMyOwner() {
+		return myOwner;
+	}
+
+
+
+	public void setMyOwner(Owner myOwner) {
+		this.myOwner = myOwner;
+	}
+
+
 
 	@Override
 	public void kickOutThief() {
