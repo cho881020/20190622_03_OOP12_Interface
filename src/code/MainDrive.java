@@ -2,6 +2,7 @@ package code;
 
 import code.datas.Dog;
 import code.datas.Human;
+import code.interfaces.Owner;
 
 public class MainDrive {
 
@@ -22,6 +23,32 @@ public class MainDrive {
 		dog1.kickOutThief();
 		dog1.patrol();
 		dog1.playWithOwner();
+
+		dog1.crash();
+
+		dog1.setMyOwner(h1);
+		dog1.crash();
+
+		dog1.setMyOwner(new Owner() {
+			@Override
+			public void fixSituation() {
+				// TODO Auto-generated method stub
+				System.out.println("메인드라이브에서 dog1의 사고 수습");
+			}
+		});
+		dog1.crash();
+
+		Dog dog2 = new Dog();
+
+		dog2.setMyOwner(new Owner() {
+			@Override
+			public void fixSituation() {
+				// TODO Auto-generated method stub
+				System.out.println("메인드라이브에서 dog2의 사고 수습");
+			}
+		});
+		dog2.crash();
+
 	}
 
 }
