@@ -4,7 +4,7 @@ public abstract class Animal {
     
     private String name;
 
-    private void move(int x, int y) {
+    public void move(int x, int y) {
         String msg = String.format("%d, %d로 이동합니다.", x, y);
         System.out.println(msg);
     }
@@ -15,6 +15,11 @@ public abstract class Animal {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void fireGun() {
+        // TODO Auto-generated method stub
+        
     }
     
     

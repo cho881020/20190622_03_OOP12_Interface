@@ -3,7 +3,7 @@ package code.datas;
 import code.interfaces.TaxPayer;
 import code.interfaces.Army;
 
-public class Human extends Animal implements TaxPayer{
+public class Human extends Animal implements TaxPayer, Army{
 
     @Override
     public void payTax(int money) {
@@ -14,15 +14,15 @@ public class Human extends Animal implements TaxPayer{
     }
     
     @Override
-    private void fireGun() {
+    public void fireGun() {
         // TODO Auto-generated method stub
-
+        System.out.println("총을 발사합니다.");
     }
     
     @Override
-    private void defensecountry() {
+    public void defenseCountry() {
         // TODO Auto-generated method stub
-
+        System.out.println("나라를 지킵니다.");
     }
     
     
