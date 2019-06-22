@@ -1,6 +1,6 @@
 package code.interfaces;
 
-public interface HousKepper {
+public interface HouseKeeper {
 
 	public abstract void kickOutThief();
 	
